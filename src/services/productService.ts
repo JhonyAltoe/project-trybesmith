@@ -10,7 +10,6 @@ export default class ProductService {
   }
 
   public async addProduct(product: IProduct) {
-    console.log('SERVICE');
     const result = await this.model.addProduct(product);
     return result;
   }
