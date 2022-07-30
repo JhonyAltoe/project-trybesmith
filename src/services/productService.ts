@@ -14,4 +14,9 @@ export default class ProductService {
     const result = await this.model.addProduct(product);
     return result;
   }
+
+  public async listAllProducts(): Promise<IProduct[]> {
+    const result = await this.model.listAllProducts();
+    return result as IProduct[];
+  }
 }
